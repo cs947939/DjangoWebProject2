@@ -44,15 +44,24 @@
     <Compile Include="users\migrations\__init__.py" />
     <Compile Include="users\models.py" />
     <Compile Include="users\tests.py" />
+    <Compile Include="users\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="users\views.py" />
     <Compile Include="users\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DjangoWebProject2\templates\base.html" />
+    <Content Include="DjangoWebProject2\templates\home.html" />
+    <Content Include="DjangoWebProject2\templates\registration\login.html" />
+    <Content Include="DjangoWebProject2\templates\registration\signup.html" />
     <Content Include="requirements.txt" />
     <Content Include="users\templates\users\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DjangoWebProject2\" />
+    <Folder Include="DjangoWebProject2\templates\" />
+    <Folder Include="DjangoWebProject2\templates\registration\" />
     <Folder Include="users\" />
     <Folder Include="users\migrations\" />
     <Folder Include="users\templates\" />

@@ -1,0 +1,13 @@
+﻿{% extends 'base.html' %}
+
+{% block title%}home{$ endblock title %}
+{% block content %}
+{% if user.is_authenticated %}
+hi {{ user.username }}!
+<p><a herf="{% url 'logout' %}"></a></p>
+{% else %}
+<p> you are not loged in</p>
+<a herf="{% url 'login' %}">log in</a>
+<a herf="{% url 'signup' %}">sign up</a>
+{% endif %}
+{% endblock content %}
